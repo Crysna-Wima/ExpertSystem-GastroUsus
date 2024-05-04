@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnosa Infeksi Gastro Usus</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5">Diagnosa Infeksi Gastro Usus</h1>
+    <p class="lead text-center">Berikut adalah formulir untuk membantu mendiagnosis kemungkinan infeksi gastro usus yang Anda alami. Jawablah pertanyaan-pertanyaan di bawah ini dengan jujur dan sesuai dengan kondisi Anda saat ini.</p>
+
+    <form id="formDiagnosa" class="mt-5">
+      <div class="form-group">
+        <label>1. Apakah Anda sering mengalami buang air besar (lebih dari 2 kali)?</label>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="buangAirBesarYa" name="buangAirBesar" class="custom-control-input" value="ya">
+          <label class="custom-control-label" for="buangAirBesarYa">Ya</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="buangAirBesarTidak" name="buangAirBesar" class="custom-control-input" value="tidak">
+          <label class="custom-control-label" for="buangAirBesarTidak">Tidak</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>2. Apakah Anda mengalami berak encer?</label>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="berakEncerYa" name="berakEncer" class="custom-control-input" value="ya">
+          <label class="custom-control-label" for="berakEncerYa">Ya</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="berakEncerTidak" name="berakEncer" class="custom-control-input" value="tidak">
+          <label class="custom-control-label" for="berakEncerTidak">Tidak</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>3. Apakah Anda mengalami berak berdarah?</label>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="berakBerdarahYa" name="berakBerdarah" class="custom-control-input" value="ya">
+          <label class="custom-control-label" for="berakBerdarahYa">Ya</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="berakBerdarahTidak" name="berakBerdarah" class="custom-control-input" value="tidak">
+          <label class="custom-control-label" for="berakBerdarahTidak">Tidak</label>
+        </div>
+      </div>
+
+        <div class="form-group">
+            <label>4. Apakah Anda merasa lesu dan tidak bergairah?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="lesuYa" name="lesu" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="lesuYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="lesuTidak" name="lesu" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="lesuTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>5. Apakah Anda tidak selera makan?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="tidakSeleraMakanYa" name="tidakSeleraMakan" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="tidakSeleraMakanYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="tidakSeleraMakanTidak" name="tidakSeleraMakan" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="tidakSeleraMakanTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>6. Apakah Anda merasa mual dan sering muntah (lebih dari 1 kali)?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="mualMuntahYa" name="mualMuntah" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="mualMuntahYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="mualMuntahTidak" name="mualMuntah" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="mualMuntahTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>8. Apakah Anda merasa sakit di bagian perut?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="sakitPerutYa" name="sakitPerut" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="sakitPerutYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="sakitPerutTidak" name="sakitPerut" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="sakitPerutTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>9. Apakah tekanan darah Anda rendah?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="tekananDarahRendahYa" name="tekananDarahRendah" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="tekananDarahRendahYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="tekananDarahRendahTidak" name="tekananDarahRendah" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="tekananDarahRendahTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>10. Apakah Anda merasa pusing?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="pusingYa" name="pusing" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="pusingYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="pusingTidak" name="pusing" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="pusingTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>11. Apakah Anda mengalami pingsan?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="pingsanYa" name="pingsan" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="pingsanYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="pingsanTidak" name="pingsan" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="pingsanTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>12. Apakah suhu badan Anda tinggi?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="suhuTinggiYa" name="suhuTinggi" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="suhuTinggiYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="suhuTinggiTidak" name="suhuTinggi" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="suhuTinggiTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>13. Apakah Anda mengalami luka di bagian tertentu?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="lukaYa" name="luka" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="lukaYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="lukaTidak" name="luka" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="lukaTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>14. Apakah Anda tidak dapat menggerakkan anggota badan tertentu?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="tidakGerakYa" name="tidakGerak" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="tidakGerakYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="tidakGerakTidak" name="tidakGerak" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="tidakGerakTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>15. Apakah Anda pernah memakan sesuatu?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanSesuatuYa" name="makanSesuatu" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="makanSesuatuYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanSesuatuTidak" name="makanSesuatu" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="makanSesuatuTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>16. Apakah Anda memakan daging?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanDagingYa" name="makanDaging" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="makanDagingYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanDagingTidak" name="makanDaging" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="makanDagingTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>17. Apakah Anda memakan jamur?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanJamurYa" name="makanJamur" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="makanJamurYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanJamurTidak" name="makanJamur" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="makanJamurTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>18. Apakah Anda memakan makanan kaleng?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanMakananKalengYa" name="makanMakananKaleng" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="makanMakananKalengYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="makanMakananKalengTidak" name="makanMakananKaleng" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="makanMakananKalengTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>19. Apakah Anda membeli susu?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="beliSusuYa" name="beliSusu" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="beliSusuYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="beliSusuTidak" name="beliSusu" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="beliSusuTidak">Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>20. Apakah Anda meminum susu?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="minumSusuYa" name="minumSusu" class="custom-control-input" value="ya">
+            <label class="custom-control-label" for="minumSusuYa">Ya</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="minumSusuTidak" name="minumSusu" class="custom-control-input" value="tidak">
+            <label class="custom-control-label" for="minumSusuTidak">Tidak</label>
+            </div>
+        </div>
+
+      <button type="button" class="btn btn-primary" id="hitung_diagnosa">Diagnosa</button>
+    </form>
+
+    <div id="hasilDiagnosa" class="mt-4"></div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
